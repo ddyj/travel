@@ -64,6 +64,7 @@ export default {
       }]
     }
   },
+  // 分页算法原理 每次计算一次page 前8个数(数组编号0~7)对应page=0,检测到if (!pages[page])时，新建一个空数组，从新输入(形成新页面)
   computed: {
     pages: function () {
       const pages = []
@@ -86,7 +87,9 @@ export default {
    overflow: hidden
    height: 0
    padding-bottom: 50%
-   background: #B3D4FC
+   background: white
+  .icons
+   margin-top: 3px
    .icon
     position: relative
     overflow: hidden
